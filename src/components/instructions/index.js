@@ -26,7 +26,7 @@ const Instructions = ({ onNext }) => {
       <Whitespace height={16} />
       <InstructionHeader>Start Instructies</InstructionHeader>
       <InstructionContent>
-        Je gaat Patient 0 zoeken door samen met je team een aantal inventieve puzzels op te lossen. 
+        Je gaat je CEO zoeken door samen met je team een aantal inventieve puzzels op te lossen. 
         Daarvoor heb ik een aantal stappen om je op weg te helpen.
         </InstructionContent>
       <div
