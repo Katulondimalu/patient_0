@@ -173,22 +173,22 @@ export let translations = {
     nl: 'GAME 6',
   },
   game1VideoUrl: {
-    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/De%20Verdwenen%20CEO%2FDeel%201.mp3?alt=media&token=81a08a9f-d4e8-45c1-93c8-07aad7559b86',
+    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/Patient%200%2F001.mp3?alt=media&token=71deccec-ea95-4763-965a-81ff03288c2f',
   },
   game2VideoUrl: {
-    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/De%20Verdwenen%20CEO%2FDeel%202.mp3?alt=media&token=0d0e3815-afe4-495c-a148-1662c4aa7601',
+    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/Patient%200%2F002.mp3?alt=media&token=0eafc366-02d0-474a-a2c6-2f6a66859879',
   },
   game3VideoUrl: {
-    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/De%20Verdwenen%20CEO%2FDeel%203.mp3?alt=media&token=088f48cd-5ff0-4442-a75b-5c7e271e2deb',
+    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/Patient%200%2F003.mp3?alt=media&token=3137414c-cb59-4bb7-820a-e63dc77a3264',
   },
   game4VideoUrl: {
-    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/De%20Verdwenen%20CEO%2FDeel%204.mp3?alt=media&token=bf972a90-58a3-4213-91e2-6015f1caf59f',
+    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/Patient%200%2F004.mp3?alt=media&token=59eeff6c-01cb-41f1-bc67-7e6b40468283',
   },
   game5VideoUrl: {
-    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/De%20Verdwenen%20CEO%2FDeel%205.mp3?alt=media&token=1b3e24ef-9f53-4da9-bf10-e4e1b6b6bbe8',
+    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/Patient%200%2F005.mp3?alt=media&token=e5b7cea7-517b-43cc-89cd-152164eb8b25',
   },
   game6VideoUrl: {
-    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/De%20Verdwenen%20CEO%2FDeel%206.mp3?alt=media&token=84f8471e-3906-41da-b884-c749bfe9da18',
+    nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/Patient%200%2F006.mp3?alt=media&token=d45936cd-3774-41f5-b43e-5dbbfdbaa278',
   },
   gameeindeVideoUrl: {
     nl: 'https://firebasestorage.googleapis.com/v0/b/de-kist.appspot.com/o/Nederlands%20klein%2Fspel_6%20(720p).mp4?alt=media&token=f59585d7-e76d-4a8a-9585-e4b3aa974d71',
