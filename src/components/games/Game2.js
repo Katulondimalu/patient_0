@@ -1,14 +1,14 @@
-import { child, set } from 'firebase/database';
-import React, { useContext } from 'react';
-import assets from '../../assets';
-import { RoomContext } from '../../context/BaseContext';
-import { Whitespace } from '../../Elements';
-import { useTranslation } from '../../languages';
-import BarcodeScanner from '../../pages/barcode/BarcodeScanner';
-import { HintsDialog, PreviousMediaDialog } from '../../utils/Dialog';
-import { useFirebase } from '../../utils/firebase';
-import { useDialogRef } from '../../utils/use';
-import { DevButton } from '../DevButton';
+import { child, set } from "firebase/database";
+import React, { useContext } from "react";
+import assets from "../../assets";
+import { RoomContext } from "../../context/BaseContext";
+import { Whitespace } from "../../Elements";
+import { useTranslation } from "../../languages";
+import BarcodeScanner from "../../pages/barcode/BarcodeScanner";
+import { HintsDialog, PreviousMediaDialog } from "../../utils/Dialog";
+import { useFirebase } from "../../utils/firebase";
+import { useDialogRef } from "../../utils/use";
+import { DevButton } from "../DevButton";
 
 const Game2 = ({ onNext }) => {
   let t = useTranslation();
@@ -21,17 +21,17 @@ const Game2 = ({ onNext }) => {
     <div
       style={{
         flex: 1,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'stretch',
-        justifyContent: 'space-around',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "stretch",
+        justifyContent: "space-around",
       }}
     >
       <DevButton onClick={onNext} />
 
       <PreviousMediaDialog
         ref={previous_media_dialog}
-        url={t('game2VideoUrl')}
+        url={t("game2VideoUrl")}
       />
 
       <HintsDialog
@@ -41,25 +41,25 @@ const Game2 = ({ onNext }) => {
             bought: room?.bought_hints?.hint_2a,
             penalty_minutes: 1,
             onBuy: () => {
-              set(child(room_ref, 'bought_hints/hint_2a'), true);
+              set(child(room_ref, "bought_hints/hint_2a"), true);
             },
-            text: t('hintText_2a'),
+            text: t("hintText_2a"),
           },
           {
             bought: room?.bought_hints?.hint_2b,
             penalty_minutes: 3,
             onBuy: () => {
-              set(child(room_ref, 'bought_hints/hint_2b'), true);
+              set(child(room_ref, "bought_hints/hint_2b"), true);
             },
             text: (
               <div>
-                {t('hintText_2b')}
+                {t("hintText_2b")}
                 <Whitespace height={8} />
                 <img
-                  style={{ width: '100%', filter: 'invert(1)' }}
+                  style={{ width: "100%", filter: "invert(1)" }}
                   // @ts-ignore
                   src={assets.images.hints.hint2b}
-                  alt='icon'
+                  alt="icon"
                 />
               </div>
             ),
@@ -68,44 +68,45 @@ const Game2 = ({ onNext }) => {
             bought: room?.bought_hints?.hint_2c,
             penalty_minutes: 10,
             onBuy: () => {
-              set(child(room_ref, 'bought_hints/hint_2c'), true);
+              set(child(room_ref, "bought_hints/hint_2c"), true);
             },
-            text: t('hintText_2c'),
+            text: t("hintText_2c"),
           },
         ]}
       />
 
-      <div style={{ textAlign: 'center' }}>{t('game2ClueText')}</div>
-      <BarcodeScanner
-        codes={[
-          '1397',
-          '24533',
-        ]}
-        onNext={onNext}
-      />
+      <div style={{ textAlign: "center" }}>{t("game2ClueText")}</div>
+      <div style={{ textAlign: "center" }}>
+        Eerst maar de goede straat vinden. Gebruik de kaart en volg de route
+        vanaf het kruispunt van de kerk en het Tulppark richting de apotheek. Ga
+        de eerste links en dan meteen rechts. Vervolgens ga je de tweede straat
+        rechts. Loop rechtdoor tot de kroeg links ligt, sla hier rechtsaf. Sla
+        de tweede straat linksaf. In deze straat moet je wezen.
+      </div>
+      <BarcodeScanner codes={["1397", "24533"]} onNext={onNext} />
 
       <div
         style={{
           flex: 1,
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '0 16px',
-          marginTop: '1rem',
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "0 16px",
+          marginTop: "1rem",
         }}
       >
         <button
-          className='outline'
+          className="outline"
           onClick={() => {
             previous_media_dialog.current.showModal();
           }}
         >
-          {t('Video')}
+          {t("Video")}
         </button>
         <div style={{ width: 16 }} />
         <button onClick={() => dialog_1.current.showModal()}>
-          {t('Hints')}
+          {t("Hints")}
         </button>
       </div>
     </div>
